@@ -15,11 +15,41 @@
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/vendor/html5shiv.min.js"></script>
     <script src="js/vendor/respond.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="ani/waifu.css"/>
+    <script src="ani/jquery.min.js"></script>
 	  
   </head>
   <body>
 
+  <style>
+		.waifu {
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:10;
+	font-size:0;
+	-webkit-transform:translateY(3px);
+	transform:translateY(3px)
+    }
+  </style>	
+	  
+  <div class="waifu" id="waifu">
+  <div class="waifu-tips" style="opacity: 1;"></div>
+  <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+   <div class="waifu-tool">
+    <span class="fui-home"></span>
+    <span class="fui-chat"></span>
+    <span class="fui-eye"></span>
+    <span class="fui-user"></span>
+    <span class="fui-photo"></span>
+    <span class="fui-info-circle"></span>
+    <span class="fui-cross"></span>
+   </div>
+  </div>
+  <script src="ani/live2d.min.js"></script>
+  <script src="ani/waifu-tips.js"></script>
+  <script type="text/javascript">initModel()</script>
+	  
   <!-- START: header -->
   
   <div class="probootstrap-loader"></div>
@@ -93,3 +123,4 @@
   <script src="js/custom.js"></script>
   </body>
 </html>
+<link rel="stylesheet" type="text/css" href="ani/flat-ui.min.css"/>
