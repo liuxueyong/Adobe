@@ -1,0 +1,27 @@
+.helptab {
+    position: relative;
+}
+ 
+.helptab img.helpimg {
+  position: absolute;
+  z-index: 99;
+  top: -160px;
+  right: 16px;
+  width: 10rem;
+  max-width: none;
+  height: 10rem;
+  transform: scale(0);
+  transform-origin: bottom right;
+  opacity: 0;
+  border: 1px solid #5068A9;
+  border-radius: .25rem;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+ 
+}
+ 
+.helptab:hover img.helpimg {
+    transform: scale(1);
+    opacity: 1;
+}
