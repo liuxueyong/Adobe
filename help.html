@@ -24,7 +24,7 @@
   <!-- Live 2D -->
 
   <style>
-	.waifu {
+  .waifu {
 	position:fixed;
 	bottom:0;
 	left:0;
@@ -33,6 +33,23 @@
 	-webkit-transform:translateY(1px);
 	transform:translateY(1px)
     }
+	  
+   @keyframes fade-in {  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+    }  
+   @-webkit-keyframes fade-in {  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+    }  
+   #waifu {    
+    animation: fade-in;  
+    animation-duration: 2.5s;  
+    -webkit-animation:fade-in 2.5s;
+    }  
+		
   </style>	
 	  
   <div class="waifu" id="waifu">
