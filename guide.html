@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <link rel="Bookmark" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LXY | Adobe Install</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">  
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ani/waifu.css"/>
+    <script src="ani/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/helptab.css">
+  </head>
+  <body>
+	  
+  <!-- Live 2D -->
+
+  <style>
+  .waifu {
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:10;
+	font-size:0;
+	-webkit-transform:translateY(1px);
+	transform:translateY(1px)
+    }
+	  
+   @keyframes fade-in {  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+    }  
+   @-webkit-keyframes fade-in {  
+    0% {opacity: 0;}  
+    40% {opacity: 0;}  
+    100% {opacity: 1;}  
+    }  
+   #waifu {    
+    animation: fade-in;  
+    animation-duration: 2.5s;  
+    -webkit-animation:fade-in 2.5s;
+    }  
+		
+  </style>	
+	  
+  <div class="waifu" id="waifu">
+  <!--<div class="waifu-tips" style="opacity: 1;"></div>-->
+  <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+   <!--<div class="waifu-tool">
+    <span class="fui-chat"></span>
+    <span class="fui-eye"></span>
+    <span class="fui-user"></span>
+    <span class="fui-photo"></span>
+    <span class="fui-cross"></span>
+   </div>-->
+  </div>
+	  
+  <script type="text/javascript">  
+    function browserRedirect() {  
+    var sUserAgent = navigator.userAgent.toLowerCase();  
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";  
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
+    // 浏览设备为  
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  
+  
+    //手机浏览 
+    } else {  
+  
+    //PC浏览
+    document.write('<script type="text/javascript" charset="utf-8" src="ani/live2d.min.js"><\/script>');  
+    document.write('<script type="text/javascript" charset="utf-8" src="ani/waifu-tips.js"><\/script>');  
+    }  
+    }  
+    browserRedirect();  
+  </script>
+  <script type="text/javascript">initModel()</script>
+	  
+  <!-- START: header -->
+  
+  <div class="probootstrap-loader"></div>
+
+  <header role="banner" class="probootstrap-header">
+    <div class="container">
+        <a href="https://lxy.plus" class="probootstrap-logo">LXY.PLUS <span><img src="favicon.ico" width="12" height="12"/></span></a>
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+      <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li><a href="index.html">Adobe 入门</a></li>
+            <li><a href="tools.html">激活工具</a></li>
+			<li class="active"><a href="guide.html">安装指南</a></li>
+            <li><a href="help.html">帮助文件</a></li>
+            <li><a href="mailto:alpha@lxy.plus">意见反馈</a></li>
+          </ul>
+          <div class="extra-text visible-xs"> 
+            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>BY ALIX .</h5>
+            <p>Less Is More</p>
+          </div>
+        </nav>
+    </div>
+  </header>
+  <!-- END: header -->
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><img src="img/img_8.jpg" class="img-responsive" alt="Free Bootstrap Template"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 col-md-push-5">
+		  
+			<h2><font color="#5068A9">STEP</font> 1</h2>
+			 <p><a href="https://auth.services.adobe.com/zh_HANS/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252Fcn%252Findex2.html%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26state%3D%257B%2522ac%2522%253A%2522%2522%257D&client_id=adobedotcom2&scope=creative_cloud%2CAdobeID%2Copenid%2Cgnav%2Cread_organizations%2Cadditional_info.projectedProductContext%2Csao.ACOM_CLOUD_STORAGE%2Csao.stock%2Csao.cce_private%2Cadditional_info.roles&denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252Fcn%252Findex2.html%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken%26state%3D%257B%2522ac%2522%253A%2522%2522%257D&state=%7B%22ac%22%3A%22%22%7D&relay=9d69d81f-ab1e-4e3f-8cf7-2d86526e5b90&locale=zh_HANS&flow_type=token&idp_flow_type=login#/">登录</a> 或 <a href="https://auth.services.adobe.com/zh_HANS/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252Fcn%252Findex2.html%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26state%3D%257B%2522ac%2522%253A%2522%2522%257D&client_id=adobedotcom2&scope=creative_cloud%2CAdobeID%2Copenid%2Cgnav%2Cread_organizations%2Cadditional_info.projectedProductContext%2Csao.ACOM_CLOUD_STORAGE%2Csao.stock%2Csao.cce_private%2Cadditional_info.roles&denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252Fcn%252Findex2.html%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken%26state%3D%257B%2522ac%2522%253A%2522%2522%257D&state=%7B%22ac%22%3A%22%22%7D&relay=9d69d81f-ab1e-4e3f-8cf7-2d86526e5b90&locale=zh_HANS&flow_type=token&idp_flow_type=login#">创建ADOBE账户</a></p>
+			
+		  <h2><font color="#5068A9">STEP</font> 2</h2>
+			<p><a href="https://creativecloud.adobe.com/apps/download/creative-cloud">下载Adobe Creative Cloud</a> 桌面程序；安装并登录</P>
+		  
+		  <h2><font color="#5068A9">STEP</font> 3</h2>
+		    <p>选择需要安装的应用，例：Photoshop <br>点击 - 试用；等待下载安装完成...</p>
+		  
+		  <h2><font color="#5068A9">STEP</font> 4</h2>
+		    <p>安装完成后关闭网络；<br>从开始菜单打开 Photoshop <br>以试用方式进入软件后退出 Photoshop</p>
+		  
+		  <h2><font color="#5068A9">STEP</font> 5</h2>
+		    <p>打开网络连接<br>下载 <a href="tools.html">激活工具</a>，例：ACC 2019 . Gen-P <br>解压 - 运行 RunMe.exe <br>点击 Ps Icon - 搜索文件 - 开始破解 ... <br>完成后运行 Photoshop 查看是否激活</p>
+		  
+		    <p>&nbsp;</p>
+			
+		  <h2><a href="help.html" font color="#5068A9">HELP</a> <i class="icon-forward"></i></h2>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <footer class="probootstrap-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="probootstrap-copyright">By Alix . I HAVE A DREAM</p>
+          <ul class="probootstrap-social">
+            <li><a href="#"><img src="img/X.png" width="32" height="32"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+  </div>
+  
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+  </body>
+</html>
+<link rel="stylesheet" type="text/css" href="ani/flat-ui.min.css"/>
