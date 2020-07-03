@@ -25,6 +25,7 @@
 }
 .blink{
     color: #b2b8c2;
+	font-size: 0.6em;
     animation: blink 1s linear infinite;  
     /* 其它浏览器兼容性前缀 */
     -webkit-animation: blink 1s linear infinite;
