@@ -33,3 +33,9 @@
     -ms-animation: blink 1s linear infinite;
     -o-animation: blink 1s linear infinite;
 }
+
+
+.text-go{
+	position: absolute;
+    bottom: 45px;
+}
