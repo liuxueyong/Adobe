@@ -112,21 +112,6 @@
           </div>
         </div>
 		  
-        <div class="col-md-4" style="height: 180px"><!--Adobe XD-->
-          <div class="service left-icon probootstrap-animate">
-            <div class="icon">
-              <img src="img/apps/adobexd.svg"  width="50" height="50">
-            </div>
-            <div class="text">
-              <h3 class="heading">Adobe XD &nbsp;
-				  <span style="font-size: 10px">21.2.4</span></h3>
-              <p>设计和分享用户体验并创建原型。</p>
-			  <p class="text-go"><a href="https://pan.baidu.com/s/1nqF-IGG5Max7nDKPcj9SPg" target="_blank" class="copy1">立即获取  </a>&nbsp <span style="font-size: 12px">提取码：x9cf</span>
-			  </p>
-            </div>
-          </div>
-        </div>
-		  
         <div class="col-md-4" style="height: 180px"><!--After Effects-->
           <div class="service left-icon probootstrap-animate">
             <div class="icon">
@@ -291,7 +276,21 @@
             </div>
           </div>
         </div>
-		 
+		 	  
+        <div class="col-md-4" style="height: 180px"><!--Adobe XD-->
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/apps/adobexd.svg"  width="50" height="50">
+            </div>
+            <div class="text">
+              <h3 class="heading">Adobe XD</h3>
+              <p>设计和分享用户体验并创建原型。</p>
+			  <p class="text-go"><a href="https://creative.adobe.com/zh-cn/products/download/xd" target="_blank" class="copy1">立即获取  </a>&nbsp <span style="font-size: 12px">跳转至：Adobe</span>
+			  </p>
+            </div>
+          </div>
+        </div>
+
 		  
 </div>
     </div>
@@ -360,6 +359,22 @@
     document.body.appendChild(textArea)
 
     textArea.select()
+	  
+	try {
+      var msg = document.execCommand('copy') ? '成功 ！' : '失败 ！'
+	  swal({
+          title: "正在传送" ,
+          text: "百度网盘提取码复制剪贴板" + msg,
+          timer: 5000
+      });
+	
+    } catch (err) {
+      	  sweetAlert("未知错误", "出问题了！提取码复制失败，请手动输入..", "error");
+    }
+
+    document.body.removeChild(textArea)
+  }
+
 
   </script>
 
