@@ -39,3 +39,7 @@
 	position: absolute;
     bottom: 45px;
 }
+
+.img-bg{
+	border-radius: 10px;
+}
