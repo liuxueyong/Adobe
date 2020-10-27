@@ -54,3 +54,35 @@
     transform: scale(1);
     opacity: 1;
 }
+
+.codecard {
+    position: relative;
+}
+ 
+.codecard img.codecard {
+  position: absolute;
+  z-index: 99;
+  bottom: -32px;
+  left: 0px;
+  width: 10rem;
+  width: 248px;
+  height: 248px;
+  border-radius: 10px;
+  border: solid 4px #5068a9;
+  transform: scale(0);
+  transform-origin: bottom left;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+ 
+}
+ 
+.codecard:hover img.codecard {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.plusvip{
+	border-radius: 10px;
+}
