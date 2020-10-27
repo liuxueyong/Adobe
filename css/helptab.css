@@ -63,14 +63,14 @@
   position: absolute;
   z-index: 99;
   bottom: -32px;
-  left: 0px;
+  left: -85px;
   width: 10rem;
   width: 248px;
   height: 248px;
   border-radius: 10px;
   border: solid 4px #5068a9;
   transform: scale(0);
-  transform-origin: bottom left;
+  transform-origin: bottom;
   opacity: 0;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .4s ease-in-out;
