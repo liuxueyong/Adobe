@@ -78,11 +78,11 @@
 	position: relative;
 }
 .t1X-a{
-    background:-webkit-linear-gradient(0deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    background:-webkit-linear-gradient(left,#ef7ac8,#a083ed,#43aeff 25%,#a083ed,#43aeff 50%,#a083ed,#43aeff 75%,#ef7ac8);
     color:transparent;
     -webkit-background-clip:text;
     background-size:200% 100%;
-    animation:masked-animation 1s infinite linear;
+    animation:masked-animation 3s infinite linear;
 }
     @-webkit-keyframes masked-animation {
        0% {
