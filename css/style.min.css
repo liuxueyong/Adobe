@@ -147,3 +147,12 @@ body{                                /*禁用文本选择*/
    -khtml-user-select: none;         /*早期浏览器*/
    user-select: none;
 }
+
+.h1-2021{
+	position: relative;
+    left: 150px;
+	top: 30px;
+	font-weight: 700;
+	font-size: 45%;
+	color: #EC0003;
+}
