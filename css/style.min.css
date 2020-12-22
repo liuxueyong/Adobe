@@ -72,6 +72,21 @@
 .pan-go:hover{
 	background: #005abe;
 }
+.pan-ban{
+	color: #5c5c5c;
+	font-size: 80%;
+	font-weight: bold;
+	margin-right: 5px;
+	float:right;
+	border-radius: 20px;
+	background: #cccccc;
+	outline: none;
+	border: none;
+	width: 80px;
+	height: 30px;
+	pointer-events: none;
+	cursor:not-allowed;
+}
 .text-go{
 	color: #fff;
 	font-size: 80%;
