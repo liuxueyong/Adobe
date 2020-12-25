@@ -148,7 +148,7 @@ body {                                /*禁用文本选择*/
 
 .h404 {
 	color: #4a525d;
-	font-size: 45px;
+	font-size: 40px;
 	position: relative;
 	top: 120px;
 	width: 400px;
@@ -223,7 +223,7 @@ body {                                /*禁用文本选择*/
 .h404:after {
 	content: attr(data-text);
 	position: absolute;
-	left: 10px;
+	left: 35px;
 	text-shadow: -1px 0 #ff4c9c;
 	top: 0;
 	color: #4a525d;
@@ -301,7 +301,7 @@ body {                                /*禁用文本选择*/
 .h404:before {
 	content: attr(data-text);
 	position: absolute;
-	left: 11px;
+	left: 20px;
 	text-shadow: 1px 0 #4cfff4;
 	top: 0;
 	color: #4a525d;
