@@ -7,29 +7,29 @@
   -webkit-border-radius: 0
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 10px
+    width: 5px;
+    height: 10px
 }
 ::-webkit-scrollbar-thumb {
-  height: 50px;
-  background-color: #b8b8b8;
-  -webkit-border-radius: 6px;
-  outline-offset: -2px;
-  filter: alpha(opacity = 50);
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  opacity: 0.5
+    height: 50px;
+    background-color: #b8b8b8;
+    -webkit-border-radius: 6px;
+    outline-offset: -2px;
+    filter: alpha(opacity = 50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5
 }
 ::-webkit-scrollbar-thumb:hover {
-  height: 50px;
-  background-color: #878987;
-  -webkit-border-radius: 6px
+    height: 50px;
+    background-color: #878987;
+    -webkit-border-radius: 6px
 }
 
 /* 文本闪烁 */
 @keyframes blink{
-  0%{opacity: 1;}
-  100%{opacity: 0;} 
+    0%{opacity: 1;}
+    100%{opacity: 0;} 
 }
 @-webkit-keyframes blink {
     0% { opacity: 1; }
@@ -75,10 +75,11 @@
 	-webkit-transition: background 0.5s;
 	-o-transition: background 0.5s;
 }
-.pan-go:hover{
+.pan-go:hover {
 	background: #005abe;
 }
-.pan-ban{
+.pan-ban, .pan-ban:hover {
+	cursor:not-allowed;
 	color: #5c5c5c;
 	font-size: 80%;
 	font-weight: bold;
@@ -90,8 +91,27 @@
 	border: none;
 	width: 80px;
 	height: 30px;
+}
+.pan-load, .pan-load:hover, .pan-load:focus {
+	cursor:wait;
+    color: #d0d0d0;
+    background-color: #f0f0f0;
+    background: linear-gradient(100deg,
+	  rgba(255,255,255,0)40%,
+	  rgba(255,255,255,0.5)50%,
+	  rgba(255,255,255,0)60%
+    ) #f0f0f0;
+    background-size: 200% 100%;
+    background-position-x: 150%;
+    animation: 1s loading ease-in-out infinite;
+}
+@keyframes loading {
+	to {
+	background-position-x: -20%;
+	}
+}
+.pan-load {
 	pointer-events: none;
-	cursor:not-allowed;
 }
 
 .img-bg {
