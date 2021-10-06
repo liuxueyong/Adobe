@@ -321,7 +321,7 @@ body {                                /*禁用文本选择*/
 .h404:before {
 	content: attr(data-text);
 	position: absolute;
-	left: 40px;
+	left: 45px;
 	text-shadow: 1px 0 #7096ff ;
 	top: 0;
 	color: #5068a9;
