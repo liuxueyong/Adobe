@@ -170,7 +170,7 @@ body {                                /*禁用文本选择*/
 	color: #4a525d;
 	font-size: 35px;
 	position: relative;
-	top: 120px;
+	top: 50px;
 	width: 400px;
 	margin: 0 auto;
 }
@@ -244,9 +244,9 @@ body {                                /*禁用文本选择*/
 	content: attr(data-text);
 	position: absolute;
 	left: 55px;
-	text-shadow: -1px 0 #ff4c9c;
+	text-shadow: -1px 0 #00d7ff;
 	top: 0;
-	color: #4a525d;
+	color: #5068a9;
 	background: #fff;
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
@@ -322,9 +322,9 @@ body {                                /*禁用文本选择*/
 	content: attr(data-text);
 	position: absolute;
 	left: 40px;
-	text-shadow: 1px 0 #4cfff4;
+	text-shadow: 1px 0 #7096ff ;
 	top: 0;
-	color: #4a525d;
+	color: #5068a9;
 	background: #fff;
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
