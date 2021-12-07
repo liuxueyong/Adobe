@@ -31,18 +31,10 @@ $(document).on('copy', function (){
 });
 
 $(document).on("visibilitychange", function() {
-		if (!document.hidden) showMessage("(◍'౪`◍)ﾉﾞ欢迎回来 ! ^_^o", 6000, 9);
+		if (!document.hidden) showMessage("欢迎回来！", 6000, 9);
 	});
 
-/*$('#hitokoto').mouseover(function (){
-    var text = '这句一言出处是 <span style="color:#0099cc;">『{source}』</span>，是 <span style="color:#0099cc;">FGHRSH</span> 在 {date} 收藏的！';
-    var hitokoto = JSON.parse($(this)[0].dataset.raw);
-    text = text.render({source: hitokoto.source, author: hitokoto.author, date: hitokoto.date});
-    showMessage(text, 3000);
-});*/
-
 $('.waifu-tool .fui-home').click(function (){
-    //window.location = 'https://www.fghrsh.net/';
     window.location = $('#Header1_HeaderTitle').attr("href")
 });
 
@@ -143,18 +135,6 @@ function ifActed(){
 function elseActed(){
     getActed = hitokotoInterval = false;
     window.clearInterval(hitokotoTimer);
-}
-function showHitokoto(){
-    /* 增加 hitokoto.cn API */
-    
-    window.clearTimeout(t);
-    $.getJSON('https://v1.hitokoto.cn',function(result){
-        var text = '这句一言出自 <span style="color:#0099cc;">『{source}』</span>';  //，是 <span style="color:#0099cc;">{creator}</span> 在 hitokoto.cn 投稿的。';
-        text = text.render({source: result.from});  //, creator: result.creator
-        showMessage(result.hitokoto, 5000);
-        t = window.setTimeout(function() {showMessage(text, 3000);}, 5000);
-        
-    });
 }
 
 function showMessage(text, timeout, flag){
