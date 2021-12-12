@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 697.92 626.31"><defs><style>.cls-1{fill:#fff;stroke:#575757;stroke-miterlimit:10;stroke-width:40px;}.cls-2{fill:#1d5199;}</style></defs><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><path class="cls-1" d="M295,51.16,28.44,512.84c-24,41.55,6,93.47,54,93.47H615.52c48,0,77.94-51.92,54-93.47L402.92,51.16C378.94,9.61,319,9.61,295,51.16Z"/><path class="cls-2" d="M332.8,439.78l-7.5-279.5h47.5l-8,279.5Zm-6.5,108v-46.5h46v46.5Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Designed_By_Lxy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 697.9 626.3" style="enable-background:new 0 0 697.9 626.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#575757;stroke-width:40;stroke-miterlimit:10;}
+	.st1{fill:#5068A9;}
+</style>
+<g id="Warning">
+	<path id="_x30_" class="st0" d="M295,51.2L28.4,512.8c-24,41.5,6,93.5,54,93.5h533.1c48,0,77.9-51.9,54-93.5L402.9,51.2
+		C378.9,9.6,319,9.6,295,51.2z"/>
+	<path id="_x31_" class="st1" d="M332.8,439.8l-7.5-279.5h47.5l-8,279.5H332.8z M326.3,547.8v-46.5h46v46.5H326.3z"/>
+</g>
+</svg>
