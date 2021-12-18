@@ -58,11 +58,40 @@
     -o-animation: blink 1s linear infinite;
 }
 
+.heading {
+    margin: 20px auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media screen and (min-width:480px) and (max-width:768px) {
+	.heading {
+		width: 280px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+	.heading {
+		width: 500px;
+	}
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+	.heading {
+		width: 110px;
+	}
+}
+@media screen and (min-width:1200px) and (max-width:1920px) {
+	.heading {
+		width: 175px;
+	}
+}
 .pan-go {
 	color: #fff;
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: bold;
+	line-height: 1px;
 	margin-right: 5px;
+	margin-top: -36px;
 	float:right;
 	border-radius: 20px;
 	background: #1473e6;
@@ -81,9 +110,11 @@
 .pan-ban, .pan-ban:hover {
 	cursor:not-allowed;
 	color: #5c5c5c;
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: bold;
+	line-height: 1px;
 	margin-right: 5px;
+	margin-top: -36px;
 	float:right;
 	border-radius: 20px;
 	background: #cccccc;
