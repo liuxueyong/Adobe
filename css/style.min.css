@@ -64,6 +64,11 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+@media screen and (min-width:180px) and (max-width:360px) {
+	.heading {
+		width: 110px;
+	}
+}
 @media screen and (min-width:360px) and (max-width:460px) {
 	.heading {
 		width: 170px;
