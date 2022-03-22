@@ -183,27 +183,6 @@
 	width: 80px;
 	height: 30px;
 }
-.pan-load, .pan-load:hover, .pan-load:focus {
-	cursor:wait;
-    color: #d0d0d0;
-    background-color: #f0f0f0;
-    background: linear-gradient(100deg,
-	  rgba(255,255,255,0)40%,
-	  rgba(255,255,255,0.5)50%,
-	  rgba(255,255,255,0)60%
-    ) #f0f0f0;
-    background-size: 200% 100%;
-    background-position-x: 150%;
-    animation: 1s loading ease-in-out infinite;
-}
-@keyframes loading {
-	to {
-	background-position-x: -20%;
-	}
-}
-.pan-load {
-	pointer-events: none;
-}
 
 .img-bg {
 	border-radius: 10px;
