@@ -116,6 +116,57 @@
 .pan-go:hover {
 	background: #005abe;
 }
+.pan-dev {
+	color: #fff;
+	font-size: 100%;
+	font-weight: bold;
+	line-height: 0px;
+	margin-right: 5px;
+	margin-top: -36px;
+	float:right;
+	border-radius: 20px;
+    background: linear-gradient(92deg,#1473e6,#1473e6,#1473e6,#f441a5,#ffeb3b,#03a9f4,#1473e6);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 100;
+	outline: none;
+	border: none;
+	width: 80px;
+	height: 30px;
+}
+.pan-dev:hover {
+	animation: animate 8s linear infinite;
+}
+@keyframes animate {
+    0% {
+          background-position: 400%;
+    }
+    100% {
+          background-position: 0%;
+        }
+    }
+.pan-dev:before {
+	color: #fff;
+    content: "";
+	float:right;
+	width: 85px;
+	height: 30px;
+    position: absolute;
+	right: 1px;
+	top: 4px;
+	z-index: -1;
+    background: linear-gradient(92deg,#1473e6,#1473e6,#1473e6,#f441a5,#ffeb3b,#03a9f4,#1473e6);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.pan-dev:hover:before {
+	color: #fff;
+    filter: blur(10px); 
+    opacity: 0.8;
+    animation: animate 8s linear infinite;
+}
 .pan-ban, .pan-ban:hover {
 	cursor:not-allowed;
 	color: #5c5c5c;
