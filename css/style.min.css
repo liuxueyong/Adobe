@@ -133,6 +133,10 @@
 	border: none;
 	width: 80px;
 	height: 30px;
+	transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+	-o-transition: background 0.5s;
 }
 .pan-dev:hover {
 	animation: animate 8s linear infinite;
@@ -149,10 +153,10 @@
 	color: #fff;
     content: "";
 	float:right;
-	width: 85px;
-	height: 30px;
+	width: 80px;
+	height: 28px;
     position: absolute;
-	right: 1px;
+	right: 4px;
 	top: 4px;
 	z-index: -1;
     background: linear-gradient(92deg,#1473e6,#1473e6,#1473e6,#f441a5,#ffeb3b,#03a9f4,#1473e6);
