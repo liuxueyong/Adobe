@@ -12,83 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/custom.css">
     <script src="js/vendor/html5shiv.min.js"></script>
     <script src="js/vendor/respond.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="ani/waifu.css"/>
-    <script src="ani/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/helptab.css">
   </head>
   <body>
-	  
-  <!-- Live 2D -->
-
-  <style>
-  .waifu {
-	position:fixed;
-	bottom:0;
-	left:0;
-	z-index:10;
-	font-size:0;
-	-webkit-transform:translateY(1px);
-	transform:translateY(1px)
-    }
-	  
-   @keyframes fade-in {  
-    0% {opacity: 0;}  
-    40% {opacity: 0;}  
-    100% {opacity: 1;}  
-    }  
-   @-webkit-keyframes fade-in {  
-    0% {opacity: 0;}  
-    40% {opacity: 0;}  
-    100% {opacity: 1;}  
-    }  
-   #waifu {    
-    animation: fade-in;  
-    animation-duration: 2.5s;  
-    -webkit-animation:fade-in 2.5s;
-    }  
-		
-  </style>	
-	  
-  <div class="waifu" id="waifu">
-  <!--<div class="waifu-tips" style="opacity: 1;"></div>-->
-  <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-   <!--<div class="waifu-tool">
-    <span class="fui-chat"></span>
-    <span class="fui-eye"></span>
-    <span class="fui-user"></span>
-    <span class="fui-photo"></span>
-    <span class="fui-cross"></span>
-   </div>-->
-  </div>
-	  
-  <script type="text/javascript">  
-    function browserRedirect() {  
-    var sUserAgent = navigator.userAgent.toLowerCase();  
-    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";  
-    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";  
-    var bIsMidp = sUserAgent.match(/midp/i) == "midp";  
-    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";  
-    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";  
-    var bIsAndroid = sUserAgent.match(/android/i) == "android";  
-    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";  
-    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";  
-    // 浏览设备为  
-    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {  
-  
-    //手机浏览 
-    } else {  
-  
-    //PC浏览
-    document.write('<script type="text/javascript" charset="utf-8" src="ani/live2d.min.js"><\/script>');  
-    document.write('<script type="text/javascript" charset="utf-8" src="ani/waifu-tips.js"><\/script>');  
-    }  
-    }  
-    browserRedirect();  
-  </script>
-  <script type="text/javascript">initModel()</script>
 	  
   <!-- START: header -->
   
@@ -189,7 +117,5 @@
 
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
   </body>
 </html>
-<link rel="stylesheet" type="text/css" href="ani/flat-ui.min.css"/>
