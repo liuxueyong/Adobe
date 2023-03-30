@@ -57,7 +57,7 @@
     -ms-animation: blink 1s linear infinite;
     -o-animation: blink 1s linear infinite;
 }
-
+    /* 文本超距折叠 */
 .heading {
     margin: 20px auto;
 	white-space: nowrap;
@@ -89,7 +89,7 @@
 		width: 110px;
 	}
 }
-@media screen and (min-width:1200px) and (max-width:1920px) {
+@media screen and (min-width:1200px) and (max-width:3000px) {
 	.heading {
 		width: 175px;
 	}
@@ -233,10 +233,10 @@
 
 body {                                /*禁用文本选择*/
    -webkit-touch-callout: none;
-   -moz-user-select: none;           /*火狐*/
-   -webkit-user-select: none;        /*webkit浏览器*/
-   -ms-user-select: none;            /*IE10*/
-   -khtml-user-select: none;         /*早期浏览器*/
+   -moz-user-select: none;            /*火狐*/
+   -webkit-user-select: none;         /*webkit浏览器*/
+   -ms-user-select: none;             /*IE10*/
+   -khtml-user-select: none;          /*早期浏览器*/
    user-select: none;
 }
 
